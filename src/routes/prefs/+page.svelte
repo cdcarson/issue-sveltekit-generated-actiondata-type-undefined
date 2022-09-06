@@ -21,7 +21,11 @@
   <button>Save</button>
 </form>
 
+<hr>
+form (ActionData):
 <pre>{JSON.stringify(form, null, 1)}</pre>
 
+<hr>
+data (PageData):
 <pre>{JSON.stringify(data, null, 1)}</pre>
 
