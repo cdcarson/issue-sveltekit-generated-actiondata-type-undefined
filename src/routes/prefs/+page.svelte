@@ -1,0 +1,27 @@
+<script lang="ts">
+  import type {  ActionData, PageData } from './$types';
+  export let data: PageData;
+  export let form: ActionData;
+  console.log(form)
+</script>
+
+<svelte:head>
+  <title>Preferences</title>
+</svelte:head>
+
+<h1>
+  Preferences
+</h1>
+
+<form method="POST">
+  <div>
+    <label for="color">Fave Color:</label>
+    <input id="color" name="color" type="text">
+  </div>
+  <button>Save</button>
+</form>
+
+<pre>{JSON.stringify(form, null, 1)}</pre>
+
+<pre>{JSON.stringify(data, null, 1)}</pre>
+
